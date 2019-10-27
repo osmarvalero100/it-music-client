@@ -9,6 +9,9 @@ Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import VueYoutube from 'vue-youtube'
+Vue.use(VueYoutube)
+
 Vue.config.productionTip = false
 
 new Vue({
