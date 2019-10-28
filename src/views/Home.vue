@@ -3,25 +3,22 @@
   <div class="mt-5">
     <b-container>
       <h1>HOME</h1>
-      <youtube :video-id="videoId" :player-vars="playerVars" @playing="playing"></youtube>
+      <Video/>
+      <b-modal id="modal-auth" title=""  hide-footer>
+        <Auth/>
+      </b-modal>
     </b-container>
   </div>
 </template>
 
 <script>
+import Video from '@/components/Video.vue'
+import Auth from '@/components/Auth.vue'
+
 export default {
-  data() {
-    return {
-      videoId: 'lG0Ys-2d4MA',
-      playerVars: {
-        autoplay: 1
-      }
-    }
-  },
-  methods: {
-    playing() {
-      console.log('\o/ we are watching!!!')
-    }
+  components: {
+    Video,
+    Auth
   }
 }
 </script>
