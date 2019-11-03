@@ -12,6 +12,15 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueYoutube from 'vue-youtube'
 Vue.use(VueYoutube)
 
+// Icons: vue-fontawesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret, faFastForward, faPlusSquare, faAngry, faHeart, faTrashAlt} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faUserSecret, faFastForward, faPlusSquare, faAngry, faHeart, faTrashAlt)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 Vue.config.productionTip = false
 
 new Vue({
